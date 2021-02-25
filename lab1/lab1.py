@@ -67,7 +67,7 @@ class Signal:
         plt.ylabel("O(n)")
         plt.plot(harmonics, times)
         plt.show()
-
+     #Функція N_v_M виводить на екран залежність N від Mx
     def N_v_M(self):
         rates = [4 * 4 ** i for i in range(7)]
         print(rates)
