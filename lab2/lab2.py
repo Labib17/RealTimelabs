@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plotter
-n = 20
-w = 5000
-N = 264
+n = 12
+w = 900
+N = 256
 
 def generate_signal(amplitude, phase, frequency, time):
     return amplitude * np.sin(frequency * time + phase)  # Press Ctrl+F8 to toggle the breakpoint.
