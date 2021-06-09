@@ -2,7 +2,8 @@ from functools import partial
 from copy import deepcopy
 from multiprocessing import Process, Queue
 from task import ProcessedTask, SchedulingResult
-from consts import TACT_SIZE, PROC_AMOUNT
+from consts import TACT_SIZE
+from example import N
 
 tasks, activeTasks = list(), list()
 
@@ -126,7 +127,7 @@ def BaseDynamicScheduler(queue, estimatePriority, allTasks):
 def multiprocScheduler(estimatePriority, tasks):
   procs = list()
   queue = Queue()
-  splitTasks = [tasks[i::PROC_AMOUNT] for i in range(PROC_AMOUNT)]
+  splitTasks = [tasks[i::N] for i in range(N)]
   for taskSet in splitTasks:
     procs.append(Process(
       target=BaseDynamicScheduler,
