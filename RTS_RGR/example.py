@@ -4,6 +4,7 @@ from utils import printResult, showGraphs, runSchedulers
 from queueGenerator import generateTasks
 import matplotlib.pyplot as plt
 
+N=7
 INTERVAL = 2.5
 INTENSITY = 7
 LIMIT = 5
