@@ -1,4 +1,4 @@
-Інна(2Телефон), [08.06.21 01:29]
+
 package ua.humeniuk.lab33;
   
   import android.support.v7.app.AppCompatActivity;
